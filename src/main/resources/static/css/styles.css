@@ -1,0 +1,110 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22 Mar 2024, 13:50:01
+    Author     : Sivuyise Ncapayi
+*/
+header{
+    font-family:Arial Black, sans-serif;
+}
+
+.title,.slogan{
+    color:#003262;
+}
+
+.title{
+    font-size:6em;
+    margin-left:1em;
+    display:inline;
+}
+
+.line{
+    width:0.3em;
+    height:5em;
+    background-color:#003262;
+    display:inline-block;
+    margin-left:1em;
+    margin-top:1em
+}
+
+.slogan-container{
+    display:inline-block;
+    width:5em;
+}
+
+.navigation{
+    background-color:#0070BB;
+    width:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:0.8em;
+
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    margin-left:1em;
+    
+}
+
+ul li{
+    display: inline;
+}
+
+form{
+    display:flex;
+    align-items:center;
+    margin-right:2em;
+}
+
+input{
+    height:1.6em;
+    border-radius:10px 0 0 10px;
+    border:none;
+}
+
+button{
+    height:1.7em;
+    border:none;
+    border-radius:0 10px 10px 0;
+}
+
+
+    
+main{
+    
+    display:flex;
+    justify-content: center;
+    align-items:center
+    height:100vh;
+}
+
+.news-section{
+    border:black;
+    border-style:dashed;
+    height:100em;
+    width:75%;
+    max-width:650px;
+    padding:20px;
+}
+/*designing the footer*/
+footer{
+    background-color:#053c70;
+    width: 100%;
+    right:0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family:Arial black, Helvetica, sans-serif;
+}
+
