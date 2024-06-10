@@ -1,0 +1,15 @@
+#Python Database Frameworks
+
+> Python offers database abstraction layers packages such as MongoEngine and SQLAlchemy
+> These packages allows developers to work at a higher level with regular Python objects instead offers of
+  database entities such as tables, documents, or query language.
+
+> Abstraction layers are also called object-relational mappers (ORM) or object-document mappers (ODMs)
+>These provide transparent conversion of high-level object-oriented operations into low-level database instructions.
+
+
+#Database Management with Flask-SQLAlchemy
+>in flask-SQLAlchemy database is specified with URL;
+>URL for MySQL
+>> mysql://usernmane:password@hostname/database
+>>eg. mysql://root:Ntando_01@localhost/trendingec 

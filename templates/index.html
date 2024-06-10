@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Application</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/images/logo.png" alt="NewsApp Logo">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Opinion</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button>Search</button>
+                </li>
+                <li><a href="{{url_for('login')}}">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside class="sidebar left">
+            <div class="featured">
+                <h2>Featured</h2>
+                <p>Feature coming soon</p>
+            </div>
+            <div class="ads">
+                <h2>Advertisements</h2>
+                <p>Feature coming soon</p>
+            </div>
+        </aside>
+        <section class="main-content">
+            <h1>Welcome to TrendingEC</h1>
+            <p>The site is under construction, come again later.</p>
+        </section>
+        <aside class="sidebar right">
+            <div class="popular-news">
+                <h2>Popular News</h2>
+                <p>Feature coming soon</p>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="categories">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="#">Opinion</a></li>
+                </ul>
+            </div>
+            <div class="advertising">
+                <h2>Advertising</h2>
+                <p><a href="#">Advertise with us</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TrendingEC. Created by devKona_.</p>
+        </div>
+    </footer>
+</body>
+</html>

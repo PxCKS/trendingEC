@@ -1,0 +1,42 @@
+These are notes for MySQL and Python
+
+Steps for creating connection and start executing
+queries
+
+#Install mysql-connector-python
+pip install mysql-connector-python
+
+#establishing connection with MySQL database
+     conn = mysql.connector.connect(
+          user="root",
+          password="Ntando_01",
+          host="localhost",
+          database="trendingec")
+
+#creating a cursor using the cursor() method
+     cursor = conn.cursor()
+
+#Execute an MySQL function using execute() method
+     cursor.execute("SELECT DATABASE()")
+
+#Fetch a single row using fetchnone() method
+data = cursor.fetchnone()
+
+print("Connection established to: ",data)
+
+conn.close()
+
+##CREATING DATABASE USING PYTHON
+     #preparing a query to create a database
+     create_db = "CREATE DATABASE TESTING 2";
+
+     #Retrieving a list of databases
+     print("List of databases: ")
+
+     cursor.execute("show databases")
+
+     print(cursor.fetchall())
+
+##INSERTING DATA INTO DATABASE
+     #MySQL syntax
+     INSERT INTO users(username, email, password) values (values from the signup forms)

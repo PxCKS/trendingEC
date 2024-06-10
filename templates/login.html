@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign In | TrendingEC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/login.css">
+  </head>
+  <body>
+    
+    <div class="container">
+      
+      <header>
+        <a href="{{url_for('home')}}">
+          <img  src="/static/images/logo.png" alt="LinkedIn Logo" class="logo">
+        </a>
+
+      </header>
+
+      <div class="login">
+        <h3>Sign in</h3>
+        <p>Stay updated on local news</p>
+        <form method="post">
+          <input id="username" type="text" placeholder="Email or Username" required>
+          
+          <div class="password-container">
+            <input id="password" type="password" placeholder="Password" required>
+            <a href="{{url_for('forgot_password')}}" class="forgot-password">Forgot Password?</a>
+        </div>
+
+          <button type="submit" class="login-button">Sign in</button>
+        </form>
+        <p class="or">or</p>
+        <a href="{{url_for('signup')}}"><button  class="join-now" onclick="window.location.href='{{ url_for('signup') }}'">Join now</button>
+</a>      </div>
+    </div>
+    
+    <footer>
+      <p>&copy; 2024 TrendingEC. Created by devKona_</p>
+    </footer>
+  </body>
+</html>

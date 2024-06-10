@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendingEC | Signup</title>
+    <link rel="stylesheet" href="/static/css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/static/images/logo.png" alt="TrendingEC Logo">
+        </header>
+        <main>
+            <h1>Join TrendingEC now, it's free!</h1>
+            <form method="post" action="/signup">
+                <div class="form-group">
+                    <input type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="Password (6 or more characters)" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="retype-password" placeholder="Retype Password" required>
+                </div>
+                <button type="submit">Agree & Join</button>
+                <p>Already on LinkedIn? <a href="{{url_for('login')}}">Sign in</a></p>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 TrendingEC. Created by devKona_</p>
+    </footer>
+</body>
+</html>
