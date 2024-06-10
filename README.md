@@ -2,20 +2,13 @@
 TrendingEC is a news web application dedicated to delivering the latest trending news and stories from the Eastern Cape province.
 
 ## Features
-#### Login Page:
-Secure user authentication
-#### Home Page:
-Aggregates all content and organizez it into various categories.
-#### Search Functionality:
-Easily find news articles with a built-in search feature.
-#### Admin Dashboard:
-Manage site content, view analytics, and administer user roles
-#### User Account Manager: 
-Manage user profiles and settings
-#### Ad space:
-Space for advertisement
-#### Featured News: 
-Highlight significant news stories
+#### Login Page: Secure user authentication
+#### Home Page: Aggregates all content and organizez it into various categories.
+#### Search Functionality: Easily find news articles with a built-in search feature.
+#### Admin Dashboard: Manage site content, view analytics, and administer user roles
+#### User Account Manager: Manage user profiles and settings
+#### Ad space: Space for advertisement
+#### Featured News: Highlight significant news stories
 
 ## Technology Stack
 The following list represents the current technology stack used in this web application. Please note that this is not an exhaustive list,
