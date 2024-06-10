@@ -4,7 +4,7 @@ TrendingEC is a news web application dedicated to delivering the latest trending
 ## Features
 #### Login Page:
 Secure user authentication
-##$# Home Page:
+#### Home Page:
 Aggregates all content and organizez it into various categories.
 #### Search Functionality:
 Easily find news articles with a built-in search feature.
@@ -43,4 +43,4 @@ and additional technologies may be incorporated as the project evolves.
 ![Screenshot (38)](https://github.com/PxCKS/trendingec/assets/99511441/cfd8d3e3-bc33-4b33-bc2f-02b8387e40b0)
 ![Screenshot (39)](https://github.com/PxCKS/trendingec/assets/99511441/147a08f3-96f9-489b-8f0b-4a6f3e94206d)
 
-
+*** Some user interfaces are not developed yet....
