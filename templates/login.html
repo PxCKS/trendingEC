@@ -21,10 +21,10 @@
         <h3>Sign in</h3>
         <p>Stay updated on local news</p>
         <form method="post">
-          <input id="username" type="text" placeholder="Email or Username" required>
+          <input id="username" type="text" name="username"placeholder="Username" required>
           
           <div class="password-container">
-            <input id="password" type="password" placeholder="Password" required>
+            <input id="password" type="password" name="password" placeholder="Password" required>
             <a href="{{url_for('forgot_password')}}" class="forgot-password">Forgot Password?</a>
         </div>
 

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request,redirect
+from flask import Flask, flash, render_template, url_for, request,redirect
 import mysql.connector
 
 #making the instance of the Flask application
@@ -31,8 +31,7 @@ def login():
         password = request.form.get('password')
 
         #checking for empty input fields
-        if not username or not password:
-            return "All fields are required", 400
+        
         #making a connection to the database and creating a cursor object
         conn = get_db_connection()
         cursor = conn.cursor()
@@ -54,10 +53,14 @@ def login():
         #checking if the specified credential exist in the database
         if user:
             app.logger.info(f"Successful login attempt for user: {username}")
+            flash('Login successful!', 'success')
+
+
             return redirect(url_for('home'))
         
         else:
             app.logger.warning(f"Failed login attempt for user: {username}")
+            flash('Invalid credentials, Please try again.', 'error')
             return "Invalid Credentials.", 401
 
     return render_template("login.html")
