@@ -40,3 +40,10 @@ conn.close()
 ##INSERTING DATA INTO DATABASE
      #MySQL syntax
      INSERT INTO users(username, email, password) values (values from the signup forms)
+
+# When updating, deleting or inserting data to the database the changes are made in
+#the temporary state, to permanently save the changes you need to commit the transaction
+#example of commiting in python code
+
+conn = get_db_connection
+conn.commit()
