@@ -53,14 +53,12 @@ def login():
         #checking if the specified credential exist in the database
         if user:
             app.logger.info(f"Successful login attempt for user: {username}")
-            flash('Login successful!', 'success')
 
 
             return redirect(url_for('home'))
         
         else:
             app.logger.warning(f"Failed login attempt for user: {username}")
-            flash('Invalid credentials, Please try again.', 'error')
             return "Invalid Credentials.", 401
 
     return render_template("login.html")
@@ -92,7 +90,16 @@ def signup():
 def forgot_password():
     if request.method == 'POST':
         # Handle password recovery logic here
-        pass
+        email = request.form.get('email')
+
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        
+        if not email:
+            return "Email is required", 400
+        else:
+            return redirect(url_for('login'))
     return render_template('forgot-password.html')
 
 if __name__ == '__main__':

@@ -3,25 +3,27 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
+  display:flex;
+  flex-direction: column;
 }
 
 header {
   background-color: #0077b5;
   color: white;
-  padding: 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  height:70px;
 }
 
 header .logo img {
-  height: 40px; /* Adjust this height as needed */
+  height: 50px;
   width: auto;
   display: block;
 }
 
-header nav ul {
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -39,22 +41,65 @@ header nav ul li a {
   font-weight: bold;
 }
 
+.container{
+  display:flex;
+  flex:1;
+  overflow:hidden;
+
+}
+
+aside{
+    height:100%;
+    width:auto;
+    display:inline;
+    height:calc(100vh - 70px);
+    overflow-y:auto;
+}
+.options{
+    background-color: #0077b5;
+    width:15em;
+    height:50em;
+    position:relative;
+    top:0;
+
+}
+
+h3{
+    color:white;
+    height:0.2em;
+    padding:1em 0 2em 1em;
+    margin-top:0;
+}
+
+h3:hover{
+
+}
+
+
 main {
-  padding: 20px;
+  margin-top:4.4em;
+  margin-left:15em;
+  padding-left:1em;
+  position:absolute;
+  top:0;
+  border:1px solid black;
+  width:60em;
+  height: calc(100vh - 70px);
+  overflow-y:auto;
 }
 
+h4{
+ font-size:22px;
+ margin-top:30px;
+
+}
 section {
-  margin-bottom: 30px;
+    margin-top:10px;
+    margin:0;
 }
-
-h2 {
-  color: #0077b5;
-  margin-bottom: 10px;
-}
-
-.stats {
-  display: flex;
-  gap: 20px;
+.stats{
+   display: flex;
+   gap: 20px;
 }
 
 .stat {
@@ -65,40 +110,28 @@ h2 {
   text-align: center;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+input,label{
+  display:block;
+
 }
 
-form label {
-  margin-bottom: 5px;
-}
-
-form input[type="text"],
-form textarea,
-form select {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #0077b5;
-  color: white;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #005582;
-}
 
 .footer-bottom {
+  background-color: #333;
+  color: white;;
   text-align: center;
   padding: 10px;
-  background-color: #333;
-  color: white;
+  height:2em;
+}
+
+/*hidding the scroll bar*/
+main,aside{
+  scrollbar-width:none;
+
+  -ms-overflow-style:none;
+
+}
+
+main::-webkit-scrollbar, aside::-webkit=scrollbar{
+  display:none;
 }
