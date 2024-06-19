@@ -54,9 +54,11 @@ aside{
     display:inline;
     height:calc(100vh - 70px);
     overflow-y:auto;
+    background-color: #f1faee;
+    padding-top:10px;
+
 }
 .options{
-    background-color: #0077b5;
     width:15em;
     height:50em;
     position:relative;
@@ -65,14 +67,19 @@ aside{
 }
 
 h3{
-    color:white;
+    color:black;
     height:0.2em;
     padding:1em 0 2em 1em;
     margin-top:0;
 }
 
 h3:hover{
+background-color:#0077b5;
 
+}
+
+a{
+  text-decoration:none;
 }
 
 
@@ -83,7 +90,7 @@ main {
   position:absolute;
   top:0;
   border:1px solid black;
-  width:60em;
+  width:66em;
   height: calc(100vh - 70px);
   overflow-y:auto;
 }
@@ -115,23 +122,37 @@ input,label{
 
 }
 
+input{
+  width:30em;
+  height:2em;
+}
+
+textarea{
+  width:30em;
+  height:10em;
+}
+
+label{
+    padding:5px;
+    font:bold;
+}
 
 .footer-bottom {
   background-color: #333;
-  color: white;;
+  color: white;
   text-align: center;
   padding: 10px;
   height:2em;
 }
 
 /*hidding the scroll bar*/
-main,aside{
+main,aside,html{
   scrollbar-width:none;
 
   -ms-overflow-style:none;
 
 }
 
-main::-webkit-scrollbar, aside::-webkit=scrollbar{
+main::-webkit-scrollbar, aside::-webkit-scrollbar{
   display:none;
 }
