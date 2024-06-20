@@ -26,9 +26,9 @@
     <div class="container">
         <aside>
             <div class="options">
-                <a href="#"><h3>Overview</h3></a>
+                <a href="#overview"><h3>Overview</h3></a>
                 <a href="#post"><h3>Post</h3></a>
-                <a href="#"><h3>Categories</h3></a>
+                <a href="#categories"><h3>Categories</h3></a>
                 <a href="#"><h3>Analytics</h3></a>
                 <a href="#"><h3>Ads</h3></a>
                 <a href="#"><h3>Manage Roles</h3></a>
@@ -38,7 +38,7 @@
             </div>
         </aside>
         <main>
-            <section class="overview">
+            <section id="overview" class="overview">
                     <h4>Overview</h4>
                 <h5>Total Articles</h5>
                 <div class="stats">
@@ -89,7 +89,7 @@
                     </ol>
                 </div>
             </section>
-
+            <hr>
             <section id="post" class="add-content">
                 <h4>Post</h4>
                 <form>
@@ -121,8 +121,17 @@
                         <option value="featured">Featured</option>
                     </select>
 
+                    <button type="date">Schedule</button>
                     <button type="submit">Publish</button>
                 </form>
+            </section>
+            <hr>
+
+            <section id="categories">
+                <h4>Categories</h4>
+                <div class="categories">
+
+                </div>
             </section>
         </main>
     </div>
