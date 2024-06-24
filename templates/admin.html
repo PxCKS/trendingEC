@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="/static/css/admin-styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="/static/images/logo.png" type="image/png">
+
 </head>
 <body>
     <header>
@@ -13,11 +16,12 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Dashboard</a></li>
+               <!-- <li><a href="#">Dashboard</a></li>
                 <li><a href="#">Analytics</a></li>
                 <li><a href="#">Ads</a></li>
                 <li><a href="#">Manage Users</a></li>
-                <li><a href="#">Manage Roles</a></li>
+                <li><a href="#">Manage Roles</a></li>-->
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Logout</a></li>
             </ul>
         </nav>
@@ -28,12 +32,13 @@
             <div class="options">
                 <a href="#overview"><h3>Overview</h3></a>
                 <a href="#post"><h3>Post</h3></a>
+                <a href="#authors"><h3>Authors</h3></a>
                 <a href="#categories"><h3>Categories</h3></a>
-                <a href="#"><h3>Analytics</h3></a>
+                <!--<a href="#"><h3>Analytics</h3></a>
                 <a href="#"><h3>Ads</h3></a>
                 <a href="#"><h3>Manage Roles</h3></a>
                 <a href="#"><h3>Manage Users</h3></a>
-                <a href="#"><h3>Settings</h3></a>
+                <a href="#"><h3>Settings</h3></a>-->
                 <a href="#"><h3>Logout</h3></a>
             </div>
         </aside>
@@ -99,6 +104,13 @@
                     <label for="content">Content:</label>
                     <textarea id="content" name="content" required></textarea>
 
+                    <label for="media">Media:</label>
+                    <input type="file" id="media" name="media" accept="image/*" required>
+
+                    <!--
+                    this author part is suppose to be a option
+                    The options will be comming from the author section.
+                    -->
                     <label for="author">Author:</label>
                     <input type="text" id="author" name="author" required>
 
@@ -115,21 +127,70 @@
                     <input type="text" id="tags" name="tags">
 
                     <label for="section">Section:</label>
+                    <!--
+                        revisit the sections to publish the news under
+                    -->
                     <select id="section" name="section">
                         <option value="home">Home</option>
                         <option value="news">News</option>
                         <option value="featured">Featured</option>
                     </select>
 
-                    <button type="date">Schedule</button>
-                    <button type="submit">Publish</button>
+                    <button id="publish" type="submit">Publish</button>
                 </form>
             </section>
             <hr>
 
+            <section id="authors" class="authors">
+                <h4>Authors</h4>
+                <button class="add_author">Add Author</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th placeholder="Sivuyise Ncapayi"></th>
+                            <th placeholder="username@gmail.com"></th>
+                            <th placeholder="Developer"></th>
+                            <th>
+                                <button class="edit_author">Edit</button>
+                                <button class="delete_author">Delete</button>
+                            </th>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </section>
             <section id="categories">
                 <h4>Categories</h4>
                 <div class="categories">
+                    <input type="text" placeholder="search">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+
+                        </tr>
+
+
+                        </tbody>
+                    </table>
 
                 </div>
             </section>
