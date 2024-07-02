@@ -1,10 +1,10 @@
 from flask import Flask, flash, render_template, url_for, request, redirect
 import mysql.connector
-from routes.admin import admin_bp
+#from routes.admin import admin_bp
 
 #making the instance of the Flask application
 app = Flask(__name__)
-app.register_blueprint(admin_bp, url_prefix='/admin')
+#app.register_blueprint(admin_bp, url_prefix='/admin')
 
 #function to make connection to the database
 def get_db_connection():
