@@ -131,7 +131,7 @@ input{
 }
 
 textarea{
-  width:50em;
+  width:60em;
   height:10em;
 }
 
@@ -167,6 +167,15 @@ th, td {
 
 th {
   background-color: #f4f4f4;
+}
+
+.btn-container{
+   display:flex;
+   align-items: center;
+}
+.action_btn{
+    align-items: center;
+    width: 20%;
 }
 
 input {
